@@ -63,23 +63,23 @@ public class GrpcTraceConsumer implements TraceConsumer {
    * @param apiHost a string containing the API host name.
    * @param credentials a credentials used to authenticate API calls.
    */
-  @Deprecated
-  public static GrpcTraceConsumer create(String apiHost, Credentials credentials)
-      throws IOException {
-    TraceServiceSettings traceServiceSettings =
-        TraceServiceSettings.newBuilder()
-            .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
-            .setTransportProvider(
-                TraceServiceSettings.defaultGrpcTransportProviderBuilder()
-                    .setChannelProvider(
-                        TraceServiceSettings.defaultGrpcChannelProviderBuilder()
-                            .setEndpoint(apiHost)
-                            .build())
-                    .build())
-            .build();
-
-    return new GrpcTraceConsumer(TraceServiceClient.create(traceServiceSettings));
-  }
+  //@Deprecated
+//  public static GrpcTraceConsumer create(String apiHost, Credentials credentials)
+//      throws IOException {
+//    TraceServiceSettings traceServiceSettings =
+//        TraceServiceSettings.newBuilder()
+//            .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
+//            .setTransportProvider(
+//                TraceServiceSettings.defaultGrpcTransportProviderBuilder()
+//                    .setChannelProvider(
+//                        TraceServiceSettings.defaultGrpcChannelProviderBuilder()
+//                            .setEndpoint(apiHost)
+//                            .build())
+//                    .build())
+//            .build();
+//
+//    return new GrpcTraceConsumer(TraceServiceClient.create(traceServiceSettings));
+//  }
 
   /**
    * Creates a trace consumer that sends trace messages to the Stackdriver Trace API via gRPC.

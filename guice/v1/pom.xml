@@ -30,7 +30,6 @@
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>google-cloud-trace</artifactId>
-      <version>${google-cloud-trace.version}</version>
     </dependency>
     <dependency>
       <groupId>com.google.inject</groupId>
