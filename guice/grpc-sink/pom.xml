@@ -35,7 +35,6 @@
     <dependency>
       <groupId>com.google.auth</groupId>
       <artifactId>google-auth-library-credentials</artifactId>
-      <version>${google-auth-library-credentials.version}</version>
     </dependency>
     <dependency>
       <groupId>com.google.inject</groupId>

@@ -24,12 +24,10 @@
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>google-cloud-trace</artifactId>
-      <version>${google-cloud-trace.version}</version>
     </dependency>
     <dependency>
       <groupId>com.google.auth</groupId>
       <artifactId>google-auth-library-credentials</artifactId>
-      <version>${google-auth-library-credentials.version}</version>
     </dependency>
   </dependencies>
 </project>
